@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button
+{
+    border: 5px solid black;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.a
+{
+    background-color: green;
+    color: red;
+}
+.b{
+    background-color: blue;
+    color: orange;
+}
+.c{
+    background-color: yellow;
+    color: purple;
+}
+.d{
+    background-color: white;
+    color: black;
+}
+</style>
+</head>
+<body>
+
+    <button class="a">My</button>
+    <button class="b">name</button>
+    <button class="c">is</button>
+    <button class="d">李沃原</button>
+</body>
+</html>
