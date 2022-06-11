@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>李沃原's Home Page</title>
+</head>
+<body>
+  <body style="text-align: left;background-color:#C0C0C0"></body>
+  <h1>李沃原的個人頁面</h1>
+  <h2>資料</h2>
+  <table border = 1>
+      <tr>
+          <th>項目</th>
+          <th>內容</th>
+      </tr>
+      <tr>
+          <td>生日</td>
+          <td>西元 2003 / 04 / 10</td>
+      </tr>
+      <tr>
+          <td>興趣</td>
+          <td>玩遊戲、看動畫、當個宅</td>
+      </tr>
+      <tr>
+          <td>就學經歷</td>
+          <td>網溪國小→永和國中→成功高中→金大資工</td>
+      </tr>
+      <tr>
+          <td>Email</td>
+          <td>torussilver0309@gmail.com</td>
+      </tr>
+</html>
