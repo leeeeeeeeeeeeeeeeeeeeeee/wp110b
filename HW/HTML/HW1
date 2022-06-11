@@ -1,0 +1,20 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>李沃原's Home Page</title>
+  </head>
+  <body>
+    <body style="text-align: left;background-color:#C0C0C0"></body>
+    <h3>李 沃原</h3>
+    <h4>生日:</h4>
+    <p>西元 2003 / 04 / 10</p>
+    <h4>興趣:</h4>
+    <p>玩遊戲、看動畫、當個宅</p>
+    <h4>就學經歷:</h4>
+    <p>新北市永和區網溪國民小學</p>
+    <p>新北市永和區永和國民中學</p>
+    <p>台北市中正區成功高級中學</p>
+    <p>國立金門大學 資訊工程學系</p>
+    <h4>Email:</h4>
+    <p>torussilver0309@gmail.com</p>
+   </html>
