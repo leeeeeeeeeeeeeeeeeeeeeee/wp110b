@@ -1,8 +1,14 @@
-function a(f,n,m)
+class a
 {
-    var i=0;
-    var j;
-    for(j = n; j < m; j = j + 0.0001) i = i + f(j) * 0.0001;
-    return i;
+    constructor(x,y)
+    {
+        this.x=x;
+        this.y=y;
+    }
+    toString()
+    {
+        return this.x + '/' + this.y;
+    }
 }
-console.log(a((x)=>x*x,0,1));
+var ans = new a(1,3);
+console.log(ans.toString());
