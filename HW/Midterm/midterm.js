@@ -10,9 +10,11 @@ function createtable()
     document.body.appendChild(mytable);
 
     var counter = 0;
-    for (let i = 0; i < type; i++) {
+    for (let i = 0; i < type; i++)
+    {
         const row = document.createElement("tr");
-        for (j = 0; j < type; j++) {
+        for (j = 0; j < type; j++)
+        {
             const cell = document.createElement("td");
             cell.id = counter;
             cell.addEventListener("click", clickhandler);
@@ -21,12 +23,16 @@ function createtable()
         }
         mytable.appendChild(row);
     }
-    for (let i = 0; i < type * type; i++) {
+    for (let i = 0; i < type * type; i++)
+    {
         var cell = document.getElementById(i);
-        if (numbers[i] == type * type) {
+        if (numbers[i] == type * type)
+        {
             cell.innerHTML = "";
             cell.className = "emptyCell";
-        } else {
+        }
+        else
+        {
             cell.innerHTML = numbers[i];
             cell.className = "cell";
         }
@@ -34,13 +40,15 @@ function createtable()
 }
 function random()
 {
-    for (let i = 0; i < type ** 2; i++) {
+    for (let i = 0; i < type ** 2; i++)
+    {
         numbers[i] = i + 1;
     }
     var ctr = numbers.length,
         temp,
         index;
-    while (ctr > 0) {
+    while (ctr > 0)
+    {
         index = Math.floor(Math.random() * ctr);
         ctr--;
         temp = numbers[ctr];
