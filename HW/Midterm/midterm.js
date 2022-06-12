@@ -1,4 +1,4 @@
-var type = 2;
+var type = 6;
 var numbers = [];
 
 function createtable()
