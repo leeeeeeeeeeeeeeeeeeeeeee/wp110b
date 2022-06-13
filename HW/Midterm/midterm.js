@@ -1,6 +1,4 @@
-var type = 6;
 var numbers = [];
-
 function createtable()
 {
     random();
@@ -10,11 +8,9 @@ function createtable()
     document.body.appendChild(mytable);
 
     var counter = 0;
-    for (let i = 0; i < type; i++)
-    {
+    for (let i = 0; i < 6; i++) {
         const row = document.createElement("tr");
-        for (j = 0; j < type; j++)
-        {
+        for (j = 0; j < 6; j++) {
             const cell = document.createElement("td");
             cell.id = counter;
             cell.addEventListener("click", clickhandler);
@@ -23,16 +19,12 @@ function createtable()
         }
         mytable.appendChild(row);
     }
-    for (let i = 0; i < type * type; i++)
-    {
+    for (let i = 0; i < 6 * 6; i++) {
         var cell = document.getElementById(i);
-        if (numbers[i] == type * type)
-        {
+        if (numbers[i] == 6 * 6) {
             cell.innerHTML = "";
             cell.className = "emptyCell";
-        }
-        else
-        {
+        } else {
             cell.innerHTML = numbers[i];
             cell.className = "cell";
         }
@@ -40,15 +32,13 @@ function createtable()
 }
 function random()
 {
-    for (let i = 0; i < type ** 2; i++)
-    {
+    for (let i = 0; i < 6 ** 2; i++) {
         numbers[i] = i + 1;
     }
     var ctr = numbers.length,
         temp,
         index;
-    while (ctr > 0)
-    {
+    while (ctr > 0) {
         index = Math.floor(Math.random() * ctr);
         ctr--;
         temp = numbers[ctr];
@@ -56,7 +46,6 @@ function random()
         numbers[index] = temp;
     }
 }
-
 function clickhandler()
 {
     var emptyID = checkadjacentcell(this.id);
@@ -80,24 +69,24 @@ function clickhandler()
 function checkadjacentcell(id)
 {
     var flag = -1;
-    const topCellId = parseInt(id) - type,
-        bottomCellId = parseInt(id) + type,
+    const topCellId = parseInt(id) - 6,
+        bottomCellId = parseInt(id) + 6,
         rightCellId = parseInt(id) + 1,
         leftCellId = parseInt(id) - 1;
     adjacentId = [topCellId, bottomCellId, rightCellId, leftCellId];
 
-    if (adjacentId[2] % type == 0)
+    if (adjacentId[2] % 6 == 0)
     {
         adjacentId[2] = -1;
     }
-    else if (adjacentId[3] % type == type - 1)
+    else if (adjacentId[3] % 6 == 6 - 1)
     {
         adjacentId[3] = -1;
     }
 
     for (let i = 0; i < adjacentId.length; i++)
     {
-        if (adjacentId[i] <= type ** 2 - 1 && adjacentId[i] >= 0)
+        if (adjacentId[i] <= 6 ** 2 - 1 && adjacentId[i] >= 0)
         {
             var cell = document.getElementById(adjacentId[i]);
             if (cell.className == "emptyCell")
@@ -111,7 +100,7 @@ function checkadjacentcell(id)
 function checkwin()
 {
     flag=true;
-    for (let i=0; i<(type*type)-1; i++)
+    for (let i=0; i<(6 * 6)-1; i++)
     {
         var cell = document.getElementById(i);
         if(cell.textContent==i+1)
