@@ -1,4 +1,5 @@
 var numbers = [];
+
 function createtable()
 {
     random();
@@ -46,6 +47,7 @@ function random()
         numbers[index] = temp;
     }
 }
+
 function clickhandler()
 {
     var emptyID = checkadjacentcell(this.id);
@@ -118,6 +120,33 @@ function checkwin()
         if(mesg)
         {
             location.reload()
+        }
+    }
+}
+function createtable1()
+{
+    random();
+
+    var counter = 0;
+    for (let i = 0; i < 6; i++) {
+        const row = document.createElement("tr");
+        for (j = 0; j < 6; j++) {
+            const cell = document.createElement("td");
+            cell.id = counter;
+            cell.addEventListener("click", clickhandler);
+            row.appendChild(cell);
+            counter++;
+        }
+        mytable.appendChild(row);
+    }
+    for (let i = 0; i < 6 * 6; i++) {
+        var cell = document.getElementById(i);
+        if (numbers[i] == 6 * 6) {
+            cell.innerHTML = "";
+            cell.className = "emptyCell";
+        } else {
+            cell.innerHTML = numbers[i];
+            cell.className = "cell";
         }
     }
 }
