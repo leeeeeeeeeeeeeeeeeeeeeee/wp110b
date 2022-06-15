@@ -34,3 +34,6 @@ undefined
 text.match(re7)
 (4) [': LeeWoYuan', ': 19', ': 186', ': 76']
 ```
+----
+[參考一](https://transbiz.com.tw/regex-regular-expression-ga-%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%A4%BA%E5%BC%8F/)<br/>
+[參考二](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Guide/Regular_Expressions)
