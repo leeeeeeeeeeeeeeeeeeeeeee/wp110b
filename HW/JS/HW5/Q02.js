@@ -1,9 +1,9 @@
 function a(n)
 {
-    var n,i = 1
-    for(i = 1;i <= n;i++)
+    var j,i = 1
+    for(i = 1;i <= j;i++)
     {
-        i=i * n;
+        i=i * j;
     }
     return i;
 }
